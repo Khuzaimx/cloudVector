@@ -8,3 +8,37 @@ now stack for backend will be django as always. i am finalizing stack for cli pc
 it should either be just for static or both tatic and dynamic
 builderpack works both with both static and dynamic stacks.
 
+
+
++----------------+           +-------------------+
+| GUI (Web App)  |           | CLI (Python Tool) |
++-------+--------+           +---------+---------+
+        |                          |
+        | REST/GraphQL API          |
+        +----------+----------------+
+                   |
+                   v
+           +----------------+
+           | Django Backend |
+           +--------+-------+
+                    |
+        +-----------+------------+
+        |                        |
++-------v-------+         +------v-------+
+| Repo Manager  |         | Deployment   |
+| (GitHub/Git)  |         | Manager      |
++-------+-------+         +------+-------+
+        |                        |
+        |                        |
+   +----v----+            +------v-------+
+   | Clone   |            | Static/Dynamic|
+   | Repo    |            | Deployment    |
+   +----+----+            +------+--------+
+        |                        |
+        |                        |
+   +----v----+            +------v--------+
+   | Detect   |           | Nginx / S3 /  |
+   | Type     |           | Docker        |
+   +----------+           +---------------+
+
+
