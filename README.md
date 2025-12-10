@@ -42,3 +42,23 @@ builderpack works both with both static and dynamic stacks.
    +----------+           +---------------+
 
 
+Architecture::
+
+   User Git Push / Upload
+        ↓
+  Central Storage (S3, Blob, Git)(well be finalized later)
+        ↓
+      Scheduler
+        ↓
+   Builder / Buildpacks
+        ↓
+   Container Image / Slug
+        ↓
+     Registry / Storage
+        ↓
+   Agent / Dyno Server(will be decided later)
+        ↓
+   Ingress / Load Balancer → App Live(will use an open source load balancer)
+
+
+
