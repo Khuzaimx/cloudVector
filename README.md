@@ -61,4 +61,4 @@ Architecture::
    Ingress / Load Balancer → App Live(will use an open source load balancer)
 
 
-
+cli package will be build using typer, tokens will be used instead of passwords
